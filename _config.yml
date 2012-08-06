@@ -1,0 +1,19 @@
+auto:	          true
+
+markdown:         rdiscount
+pygments:         true
+paginate:         6
+permalink:        /:title
+
+title:            Zimmem.com
+url:              http://wiki.zimmem.com
+feed:             /atom.xml
+author:
+    name:         Zimmem
+    twitter:      http://twitter.com/zimmem
+    weibo:		  http://weibo.com/zhuangzw
+description:      "Zimmem.com"
+author_info:      <a href="http://zimmem.com/about">About Zimmem</a>
+
+copyright:
+    -  <a href="http://zimmem.com/" title="zimmem.com" target="_blank">zimmem.com</a> &copy; Copyright 2012
