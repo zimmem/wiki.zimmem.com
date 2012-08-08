@@ -1,0 +1,15 @@
+[
+{% for tag in site.tags %}
+{
+	name: '{{ tag[0]}}',
+	posts: [
+		{% for post in tag[1] %}
+		{
+			title: '{{ post.title }}',
+			url: '{{post.url}}'
+		}
+		{% endfor%}
+	]
+}
+{% endfor %}
+]
