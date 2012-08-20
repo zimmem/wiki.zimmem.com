@@ -1,6 +1,4 @@
 <!doctype html>
-<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
-<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
 <html>
 <head>
   <meta charset="utf-8">
@@ -22,30 +20,6 @@
   <div class="wrapper">
        {{ content }}
   </div>
-
-  <div style="display:none">
-  <ul>
-	{% for tag in site.tags%}
-		<li><a href="{{ tag.url }}">{{ tag }}</li>
-	{% endfor %}
-	</ul>
-	[
-{% for tag in site.tags %}
-{
-	name: '{{ tag[0]}}',
-	posts: [
-		{% for post in tag[1] %}
-		{
-			title: '{{ post.title }}',
-			url: '{{post.url}}'
-		}
-		{% endfor %}
-	]
-}
-{% endfor %}
-]
-  </div>
-  
   
 </body>
 </html>
